@@ -20,10 +20,11 @@ function randomiseNumbers() {
   let maxNumber = Math.max.apply(null, numbers);
   max.innerHTML = maxNumber;
 
-  let sum = 0;
-    for (let i = 0; i < numbers.length; i += 1) {
-      sum += numbers[i];
-    }
-    return sum / numbers.length;
-  };
+  let sumNumber = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sumNumber = sumNumber + numbers[i];
+  }
+
+  sum.innerHTML = sumNumber;
+  arithmetic.innerHTML = sumNumber / 10;
 }
