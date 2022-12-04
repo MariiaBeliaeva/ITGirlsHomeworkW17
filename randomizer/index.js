@@ -12,26 +12,26 @@ function randomiseNumbers() {
     let min = -10;
     numbers.push(Math.floor(Math.random() * (max - min + 1)) + min);
   }
-  result.innerHTML = numbers;
+  result.innerHTML = "Generated: " + numbers;
 
   let minNumber = Math.min.apply(null, numbers);
-  min.innerHTML = minNumber;
+  min.innerHTML = "Min: " + minNumber;
 
   let maxNumber = Math.max.apply(null, numbers);
-  max.innerHTML = maxNumber;
+  max.innerHTML = "Max:" + maxNumber;
 
   let sumNumber = 0;
   for (let i = 0; i < numbers.length; i++) {
     sumNumber = sumNumber + numbers[i];
   }
 
-  sum.innerHTML = sumNumber;
-  arithmetic.innerHTML = sumNumber / 10;
+  sum.innerHTML = "Summarised: " + sumNumber;
+  arithmetic.innerHTML = "Arithmetic mean: " + sumNumber / 10;
 
   let multiplyNumber = 1;
   for (let i = 0; i < numbers.length; i++) {
     multiplyNumber = multiplyNumber * numbers[i];
   }
 
-  multi.innerHTML = multiplyNumber;
+  multi.innerHTML = "Multiplied: " + multiplyNumber;
 }
