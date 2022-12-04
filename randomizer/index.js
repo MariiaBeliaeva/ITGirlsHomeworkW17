@@ -27,4 +27,11 @@ function randomiseNumbers() {
 
   sum.innerHTML = sumNumber;
   arithmetic.innerHTML = sumNumber / 10;
+
+  let multiplyNumber = 1;
+  for (let i = 0; i < numbers.length; i++) {
+    multiplyNumber = multiplyNumber * numbers[i];
+  }
+
+  multi.innerHTML = multiplyNumber;
 }
